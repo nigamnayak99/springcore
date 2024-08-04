@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Your bean definitions go here -->
+
+    <bean class="com.perk.springcore.Student" name="student1">
+        <property name="studentId">
+            <value>1</value>
+        </property>
+        <property name="studentName">
+            <value>Nigam</value>
+        </property>
+        <property name="studentAddress">
+            <value>KENDRAPARA</value>
+        </property>
+    </bean>
+
+</beans>
+
+
+
