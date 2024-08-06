@@ -1,6 +1,7 @@
 package com.perk.springcore;
 
-import com.perk.springcore.Collections.Employee;
+import com.perk.springcore.collections.Employee;
+import com.perk.springcore.references.A;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -26,5 +27,15 @@ public class SpringCoreApp
         ApplicationContext applicationContext3 = new ClassPathXmlApplicationContext("file:src/main/resources/config/SetterInjectionWithCollectionsConfig.xml");
         Employee employee1 = (Employee) applicationContext3.getBean("employee1");
         System.out.println("Setter Injection With Collections: " +employee1);
+
+
+        ApplicationContext referenceApplicationContext = new ClassPathXmlApplicationContext("file:src/main/resources/config/SetterInjectionWithReferenceTypeConfig.xml");
+        A a_ref = (A) referenceApplicationContext.getBean("ref-a");
+        System.out.println("Setter Injection With Reference Type: " +a_ref);
+
+
+        ApplicationContext referenceApplicationContext2 = new ClassPathXmlApplicationContext("file:src/main/resources/config/SetterInjectionWithReferenceTypeAndPSchemaConfig.xml");
+        A a_ref_pSchema = (A) referenceApplicationContext2.getBean("p-schema-ref-a");
+        System.out.println("Setter Injection With Reference Type: " +a_ref_pSchema);
     }
 }

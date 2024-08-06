@@ -1,4 +1,4 @@
-package com.perk.springcore.Collections;
+package com.perk.springcore.collections;
 
 import java.util.List;
 import java.util.Map;

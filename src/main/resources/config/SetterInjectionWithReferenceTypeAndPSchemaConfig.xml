@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           https://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- Your bean definitions go here -->
+
+    <!--        <property name ="ob" ref = "bref" />-->
+    <!--        <property name="ob"> <ref bean="bref"/></property>-->
+    <!--        <bean class="com.perk.springcore.references.A" name="p-schema-ref-a" p:x="25" p:b-ref="p-schema-ref-b"/>-->
+
+
+
+    <!--Bean 1 : Setter Injection With Refernce Types  -->
+    <bean class="com.perk.springcore.references.B" name="p-schema-ref-b" p:y="120"/>
+
+    <bean class="com.perk.springcore.references.A" name="p-schema-ref-a" p:x="25" p:b-ref="p-schema-ref-b"/>
+
+</beans>

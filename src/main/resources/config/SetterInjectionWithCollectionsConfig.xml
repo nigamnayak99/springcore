@@ -12,7 +12,7 @@
 
 
     <!--Bean 1 : Setter Injection With Collections  -->
-    <bean class="com.perk.springcore.Collections.Employee" name="employee1">
+    <bean class="com.perk.springcore.collections.Employee" name="employee1">
         <property name="name" value="Nigam" />
         <property name="phones">
             <list>
